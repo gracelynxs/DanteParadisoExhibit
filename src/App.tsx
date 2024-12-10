@@ -1,5 +1,5 @@
 import Scene from './Scene'
-
+import { BrowserRouter as Router } from 'react-router-dom';
 export default function App() {
   const containerStyle = {
     width: '100vw',
@@ -10,8 +10,12 @@ export default function App() {
   }
 
   return (
-    <div style={containerStyle}>
+
+    <Router basename="/DanteParadisoExhibit">
+      <div style={containerStyle}>
       <Scene />
-    </div>
+      </div>
+    </Router>
+    
   )
 }

@@ -1,11 +1,15 @@
 {
+  "homepage": "https://github.com/gracelynxs/DanteParadisoExhibit",
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "clean": "rimraf dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -15,6 +19,7 @@
     "@types/three": "^0.170.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
     "three": "^0.171.0"
   },
   "devDependencies": {
@@ -28,6 +33,8 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "gh-pages": "^6.2.0",
     "globals": "^15.12.0",
-    "vite": "^6.0.1"
+    "rimraf": "^6.0.1",
+    "vite": "^6.0.1",
+    "vite-plugin-static-copy": "^2.2.0"
   }
 }
